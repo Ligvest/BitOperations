@@ -31,13 +31,13 @@ void showVector(std::vector<int> vec) {
 
 int main() {
 	int iNumber = 0x5FABFF01;
-	//Второй байт исходного значения
+	//Second byte
 	auto bits = getBitInterval(iNumber, 9, 16);
 	showVector(bits);
-	//Инверсное значение 7 бита
+	//Inverse value of 7 bit
 	bits = getBitInterval(~iNumber, 7, 7);
 	showVector(bits);
-	//Зеркальное отображение 17-20 битов
+	//17-20 bits displayed vice versa
 	bits = getBitIntervalInversed(iNumber, 17, 20);
 	showVector(bits);
 
